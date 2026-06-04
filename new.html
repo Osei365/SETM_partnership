@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Submission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        
+        <!-- NEW: Sleek Full-Width Header Band Starts Here -->
+        <div class="sleek-header-band">
+            <div class="logo-container">
+                <!-- Replace 'logo.png' with your actual image path or online image link -->
+                <img src="logo.png" alt="Company Logo" class="form-logo">
+            </div>
+            <h2>Submit Your Information</h2>
+            <p class="header-intro">Welcome! Please take a moment to fill out the form below. Your feedback and submissions help us improve our services.</p>
+        </div>
+        <!-- Sleek Full-Width Header Band Ends Here -->
+
+        <!-- Content Section (Lists & Form) -->
+        <div class="form-body-content">
+            
+            <!-- What We Do Section -->
+            <div class="what-we-do">
+                <h3>What We Do</h3>
+                <ul>
+                    <li>
+                        <strong>Technical Support:</strong> Troubleshooting application and software issues.
+                        <ul class="sub-list">
+                            <li>Account access and login problems</li>
+                            <li>Software bug tracking and reporting</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Content Contribution:</strong> Reviewing user articles, suggestions, and resources.
+                        <ul class="sub-list">
+                            <li>Blog posts and technical documentation</li>
+                            <li>Resource link submissions</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>General Feedback:</strong> Collecting community insights to improve layout features.
+                        <ul class="sub-list">
+                            <li>User interface (UI) reviews</li>
+                            <li>Feature requests and updates</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Join Us Section -->
+            <div class="join-us-section">
+                <div class="join-us-title-container">
+                    <h3>Join us!</h3>
+                </div>
+                <p>We are always looking for passionate individuals to join our growing community. By sharing your details and getting involved, you unlock opportunities to collaborate on projects, test new beta features, and contribute directly to our platform's future.</p>
+            </div>
+            
+            <hr class="header-divider">
+
+            <!-- Form Sections -->
+            <form id="submissionForm">
+                <!-- SECTION 1: Personal Details -->
+                <fieldset class="form-section">
+                    <legend class="section-title">1. Personal Information</legend>
+                    <p class="section-desc">Please introduce yourself. We use these details exclusively to identify your submission and map your history if you have contacted us before.</p>
+                    
+                    <div class="form-row-group">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required placeholder="John Doe">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required placeholder="john@example.com">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- SECTION 2: Preferences -->
+                <fieldset class="form-section">
+                    <legend class="section-title">2. Preferences & Topics</legend>
+                    <p class="section-desc">Help us categorize your inquiry. Choosing the correct topic flags your ticket to the right department immediately to avoid delays.</p>
+                    
+                    <div class="form-row-group">
+                        <div class="form-group">
+                            <label>Preferred Contact Method</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="contactMethod" value="Email" checked>
+                                    Email
+                                  </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="contactMethod" value="Phone">
+                                    Phone
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="contactMethod" value="No Contact">
+                                    Don't Contact Me
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="topic">Submission Topic</label>
+                            <select id="topic" required>
+                                <option value="" disabled selected>Select a topic</option>
+                                <option value="General Feedback">General Feedback</option>
+                                <option value="Technical Support">Technical Support</option>
+                                <option value="Content Contribution">Content Contribution</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- SECTION 3: Content -->
+                <fieldset class="form-section">
+                    <legend class="section-title">3. Your Submission</legend>
+                    <p class="section-desc">Provide as many specific details as possible below. Include error codes, step-by-step logs, or full descriptions so our team can help you efficiently.</p>
+                    
+                    <div class="form-group">
+                        <label for="message">Message / Details</label>
+                        <textarea id="message" rows="5" required placeholder="Type your details here..."></textarea>
+                    </div>
+                </fieldset>
+                
+                <button type="submit" id="submitBtn" class="submit-btn">Submit Form</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

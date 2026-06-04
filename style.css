@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 750px;
+    overflow: hidden; /* Essential: keeps background corners locked within border radius */
+}
+
+/* --- NEW: Sleek Full Width Header Band Styles --- */
+.sleek-header-band {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); /* Elegant Dark Slate/Blue mix */
+    padding: 35px 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-logo {
+    max-width: 160px;
+    height: auto;
+    object-fit: contain;
+    /* Optional look: adds high-contrast separation if your logo has dark background colors */
+    filter: drop-shadow(0px 2px 8px rgba(0,0,0,0.3)); 
+}
+
+.sleek-header-band h2 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.header-intro {
+    color: #cbd5e1; /* Smooth light grey text contrast */
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Form Body Wrapper for proper layout padding */
+.form-body-content {
+    padding: 30px 40px 40px 40px;
+}
+
+/* Divider adjustment */
+.header-divider {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* Rest of your existing list layouts */
+.what-we-do {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #007bff;
+    text-align: left;
+}
+
+.what-we-do h3 {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.what-we-do ul {
+    list-style-type: none;
+}
+
+.what-we-do li {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #555555;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.what-we-do li::before {
+    content: "•";
+    color: #007bff;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.sub-list {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.sub-list li {
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 4px;
+    padding-left: 15px;
+}
+
+.sub-list li::before {
+    content: "▫";
+    color: #6c757d;
+    font-size: 11px;
+}
+
+.join-us-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.join-us-section h3 {
+    font-size: 14px;
+    background-color: #e6f2ff;
+    color: #007bff;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid #b3d7ff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.join-us-section p {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #555555;
+    text-align: left;
+    margin-top: 8px;
+}
+
+/* Sections Layout panels */
+.form-section {
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1a202c;
+    padding: 0 8px;
+}
+
+.section-desc {
+    font-size: 13px;
+    color: #718096;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4a5568;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #333333;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+@media (min-width: 600px) {
+    .form-row-group {
+        display: flex;
+        gap: 20px;
+    }
+    .form-row-group .form-group {
+        flex: 1;
+    }
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
