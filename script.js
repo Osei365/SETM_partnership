@@ -1,5 +1,5 @@
 // Paste your unique Google Web App URL here
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz7pVaM0kaBs0IjX8NrnGa3UXIJE3sgCpTtEvGVeBRD1q0Ozy67oL4zWi1WGTh7M5Rq9Q/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwsvspiTXPN5RDsY_jjlIyTY_IMdAHU_J7-zIQUPHmnFFdtc3lOYbswv0LZyPBnFxWM/exec";
 
 document.getElementById('submissionForm').addEventListener('submit', function(e) {
     e.preventDefault(); // Stop page from doing a standard form reload

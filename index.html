@@ -3,291 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SETM Partnership Portal</title>
+    <title>SETM Partnership Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.jpeg">
+
 </head>
 <body>
-    <div class="form-container">
-
-        <div class="sleek-header-band">
-            <!-- Added Logo Container Starts Here -->
-            <div class="logo-container">
-                <!-- Replace 'logo.png' with your actual image path or online image link -->
-                <img src="logo.jpeg" alt="Church Logo" class="form-logo">
-            </div>
-            <!-- Added Logo Container Ends Here -->
-            <!-- <div class="form-header"> -->
-            <h2>SETM Partnership</h2>
-            <p class="header-intro">Welcome!<br>
-                <b>Sam Excelson Teaching Ministry (SETM)</b> is a God-given mandate received by Pst. Sam and Olaide Adewuyi with a singular assignment: to teach, plant, equip, and send forth believers for kingdom relevance and territorial influence. Functionally, SETM is the expression and extension of the teaching ministry of the SETMAN.
-            </p>
+    <div class="founder-split-card">
+        
+        <!-- Left Side: Full Height Image -->
+        <div class="founder-image-side">
+            <!-- Replace 'founder.jpg' with your actual image file path -->
+            <img src="setman.png" alt="Founder Portrait" class="full-portrait">
         </div>
-        <div class="form-body-content">
-                <!-- Added What We Do Section Starts Here -->
-            <div class="what-we-do">
-                <h3>What We Do</h3>
-                <ul>
-                    <li><strong>Church Planting & Extension</strong>
-                    <div>
-                        We have successfully planted and grown 4 church extensions, establishing communities of believers who worship, grow, and serve together
-                    </div>
-                    </li>
-                    <li><strong>Evangelical Outreach Programs</strong>
-                        <ul class="sub-list">
-                            <li><b>Word Fest</b> - Large-scale Teaching festival of God's word</li>
-                            <li><strong>IDBS</strong> - Weekly Interdenominational Bible Seminar</li>
-                            <li><strong>Spontaneous worship</strong> - Spirit-Led worship gatherings</li>
-                            <li><strong>Son Father Talk</strong> - Meditation and Worship Meeting</li>
-                        </ul>
-                    </li>
-                    <li><strong>Leadership Development</strong>
-                        <ul class="sub-list">
-                            <li><strong>Pastors and Ministers Training</strong> - Equipping ministry leaders for effective service</li>
-                            <li><strong>School of Ministry</strong> - Comprehensive biblical and practical ministry training</li>
-                        </ul>
-                    </li>
-                </ul>
+
+        <!-- Right Side: Header, Bio Write-up, and Action Button -->
+        <div class="founder-content-side">
+            <div class="content-header">
+                <h2>Welcome to the SETM Partnership Family!</h2>
+                <!-- <p class="subtitle">The vision and passion driving our platform.</p> -->
             </div>
-                <!-- Added What We Do Section Ends Here -->
-            <div class="join-us-section">
-                <div class="join-us-title-container">
-                    <h3>Join Us as a Partner!</h3>
-                </div>
-                <p>Imagine being part of the story when someone says, "I found Christ at Word Fest" or "My life was transformed through the School of Ministry" or "Our community was changed by that church extension." <strong>That victory? You claimed it together with us.</strong>
+
+            <div class="founder-writeup">
+                <!-- <h3></h3> -->
+                <p>
+                    <br>Thank you for your desire to support the work God is doing through Sam Excelson Teaching Ministry.<br><br>
+
+                    Your seed helps us take the Gospel further — through church planting, revival meetings, ministers' trainings, media missions, and transforming lives across nations.<br><br>
                 </p>
-                <p>Start your journey with us today!</p>
+                <!-- <p>Every submission we receive helps refine our roadmap. Whether you are seeking technical support, submitting a feature suggestion, or joining our community initiatives, your voice actively shapes what we build next.</p>
+                <strong></strong><br><br> -->                        
             </div>
 
-            <hr class="header-divider">
-
-
-            <!-- Form Starts Here with Sections -->
-            <form id="submissionForm">
-                
-                <!-- SECTION 1: Personal Details -->
-                <fieldset class="form-section">
-                    <legend class="section-title">1. Personal Information</legend>
-                    <p class="section-desc">
-                        <strong>Welcome to the SETM Partnership Family!</strong><br><br>
-
-                        Thank you for your desire to support the work God is doing through Sam Excelson Teaching Ministry.<br><br>
-
-                        Your seed helps us take the Gospel further — through church planting, revival meetings, ministers' trainings, media missions, and transforming lives across nations.<br><br>
-
-
-                        Please fill out the form below.<br><br>
-
-                        Our partnership team will reach out with next steps, updates, and prayer support.<br><br>
-
-                        <strong>Together, we spread Jesus!</strong>
-                    </p>
-                    
-                    <div class="form-row-group">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" required placeholder="John Doe">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" required placeholder="john@example.com">
-                        </div>
-                    </div>
-                    <div class="form-row-group">
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" required placeholder="08000000000">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="city">City & State / Country</label>
-                            <input type="text" id="city" required placeholder="Lagos / Nigeria">
-                        </div>
-                    </div>
-                </fieldset>
-
-                <!-- SECTION 2: Preferences -->
-                <fieldset class="form-section">
-                    <legend class="section-title">2. Your Partnership Commitment</legend>
-                    <!-- <p class="section-desc">Help us categorize your inquiry. Choosing the correct topic flags your ticket to the right department immediately to avoid delays.</p> -->
-                    
-                    <div class="form-row-group">
-                        <div class="form-group">
-                            <label>How would you like to partner with SETM?</label>
-                            <div class="radio-group">
-                                <label class="radio-label">
-                                    <input type="radio" name="partnerWithSETM" value="Monthly Partnership" checked>
-                                    Monthly Partnership
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="partnerWithSETM" value="Quarterly Partnership">
-                                    Quarterly Partnership
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="partnerWithSETM" value="Annual Partnership">
-                                    Annual Partnership
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="partnerWithSETM" value="One-time Seed">
-                                    One-time Seed
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="partnerWithSETM" value="Project Sponsorship (Outreaches, Media, Church Planting, etc.)">
-                                    Project Sponsorship (Outreaches, Media, Church Planting, etc.)
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="partnerWithSETM" value="As led by the Spirit">
-                                    As led by the Spirit
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Select Your Partnership Category</label>
-                            <div class="radio-group">
-                                <label class="radio-label">
-                                    <input type="radio" name="partnerCategory" value="Seed Partner — Any amount (₦ / $ / £)" checked>
-                                    🌱 Seed Partner — Any amount (₦ / $ / £)
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="partnerCategory" value="Bronze Partner — ₦5k–₦9,999 | $10–$24.99 | £10–£19.99">
-                                    ✨ Bronze Partner — ₦5k–₦9,999 | $10–$24.99 | £10–£19.99
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="partnerCategory" value="Silver Partner — ₦10k–₦24,999 | $25–$49.99 | £20–£39.99">
-                                    🌟 Silver Partner — ₦10k–₦24,999 | $25–$49.99 | £20–£39.99
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="partnerCategory" value="Gold Partner — ₦25k–₦49,999 | $50–$99.99 | £40–£79.99">
-                                    💎 Gold Partner — ₦25k–₦49,999 | $50–$99.99 | £40–£79.99
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="partnerCategory" value="Platinum Partner — ₦50k–₦99,999 | $100–$249.99 | £80–£149.99">
-                                    🌈 Platinum Partner — ₦50k–₦99,999 | $100–$249.99 | £80–£149.99
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="partnerCategory" value="Kingdom Pillar — ₦100k+ | $250+ | £150+">
-                                    🔥 Kingdom Pillar — ₦100k+ | $250+ | £150+
-                                </label>
-                            </div>
-                        </div>
-                        
-                        <!-- <div class="form-group">
-                            <label for="topic">Submission Topic</label>
-                            <select id="topic" required>
-                                <option value="" disabled selected>Select a topic</option>
-                                <option value="General Feedback">General Feedback</option>
-                                <option value="Technical Support">Technical Support</option>
-                                <option value="Content Contribution">Content Contribution</option>
-                            </select>
-                        </div> -->
-                    </div>
-                </fieldset>
-
-                <!-- SECTION 3: Content -->
-                <fieldset class="form-section">
-                    <legend class="section-title">3. Connection & Follow-up</legend>
-                    <!-- <p class="section-desc">Provide as many specific details as possible below. Include error codes, step-by-step logs, or full descriptions so our team can help you efficiently.</p> -->
-                    
-                    <!-- <div class="form-group">
-                        <label for="message">Message / Details</label>
-                        <textarea id="message" rows="5" required placeholder="Type your details here..."></textarea>
-                    </div> -->
-                    <div class="form-row-group">
-                        <div class="form-group">
-                            <label>Would you like to join our partners’ prayer WhatsApp group?</label>
-                            <div class="radio-group">
-                                <label class="radio-label">
-                                    <input type="radio" name="joinWhatsapp" value="Yes" checked>
-                                    Yes
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="joinWhatsapp" value="No">
-                                    No
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Would you like to receive Quarterly partnership reports?</label>
-                            <div class="radio-group">
-                                <label class="radio-label">
-                                    <input type="radio" name="QuarterlyReports" value="Yes" checked>
-                                    Yes
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="QuarterlyReports" value="No">
-                                    No
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-row-group">
-                        <div class="form-group">
-                            <label for="birthday">Birthday (DD/MM)</label>
-                            <input type="text" id="birthday" required placeholder="">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="prayerrequest">Any prayer request or note for the ministry?</label>
-                            <input type="text" id="prayerrequest" required placeholder="">
-                        </div>
-                    </div>
-                </fieldset>
-
-                <fieldset class="form-section">
-                    <legend class="section-title">4. Acknowledgement</legend>
-                    <!-- <p class="section-desc">Provide as many specific details as possible below. Include error codes, step-by-step logs, or full descriptions so our team can help you efficiently.</p> -->
-                    
-                    <!-- <div class="form-group">
-                        <label for="message">Message / Details</label>
-                        <textarea id="message" rows="5" required placeholder="Type your details here..."></textarea>
-                    </div> -->
-                    <!-- <div class="form-row-group"> -->
-                    <div class="form-group">
-                        <label><strong>Consent:</strong>
-                            I understand that this form is for partnership with Sam Excelson Teaching Ministry (SETM) and not for church membership. When I do support, I do so willingly, heartily and cheerfully, not compelled to.
-                        </label>
-                        <div class="radio-group">
-                            <label class="radio-label">
-                                <input type="radio" name="consent" value="Agree" checked>
-                                Agree
-                            </label>
-                        </div>
-                    </div>
-                    <!-- </div> -->
-                </fieldset>
-
-                <fieldset class="form-section">
-                    <legend class="section-title">5. Your Impact Starts Here</legend>
-                    <p class="section-desc">
-                        Thank you for choosing to partner with <strong>Sam Excelson Teaching Ministry (SETM)!</strong><br>
-                        Every seed you sow helps raise men as Kings and Priests on the Earth.<br><br>
-
-
-                        Are you led to sow today, here are the details to make your seed sowing seamless:<br><br>
-
-
-                        <strong>Bank:</strong> GTB<br><br>
-
-                        <strong>Account Name:</strong> SETM<br><br>
-
-                        <strong>Account Number:</strong> 0678416263<br><br>
-
-
-                        💡 Give today if your heart is stirred —your impact begins the moment you begin. We are grateful and excited to see God move through you!
-                    </p>
-                    
-                    <!-- <div class="form-group">
-                        <label for="message">Message / Details</label>
-                        <textarea id="message" rows="5" required placeholder="Type your details here..."></textarea>
-                    </div> -->
-                </fieldset>
-                
-                <button type="submit" id="submitBtn" class="submit-btn">Submit Form</button>
-            </form>
+            <!-- Call to Action Button connecting to your Form Page -->
+            <div class="cta-wrapper">
+                <a href="form.html" class="action-btn">Become a Partner</a>
+            </div>
         </div>
+
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
