@@ -11,16 +11,27 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 30px 12px;
+    padding: 20px 8px;
 }
 
-.form-container {
+/* .form-container {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 750px;
-    overflow: hidden; /* Essential: keeps background corners locked within border radius */
+    overflow: hidden;
+} */
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 95%; /* Expanded from 92% to 95% to utilize more screen width */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 /* --- NEW: Sleek Full Width Header Band Styles --- */
@@ -64,7 +75,19 @@ body {
 
 /* Form Body Wrapper for proper layout padding */
 .form-body-content {
-    padding: 30px 40px 40px 40px;
+    padding: 24px 12px; /* 24px on top/bottom, only 12px on the left/right */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 600px) {
+    .form-body-content {
+        padding: 30px 40px 40px 40px;
+    }
+    .form-container {
+        max-width: 750px; /* Restores the comfortable wide form layout for computers */
+    }
 }
 
 /* Divider adjustment */
@@ -162,8 +185,8 @@ body {
 .form-section {
     border: 1px solid #e2e8f0;
     border-radius: 6px;
-    padding: 20px;
-    margin-bottom: 25px;
+    padding: 12px;
+    margin-bottom: 20px;
     background-color: #fff;
 }
 
@@ -265,14 +288,25 @@ textarea {
 /* --- Balanced Side-by-Side Split Screen Layout --- */
 
 /* Main Card Container */
+/* .founder-split-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+} */
+
 .founder-split-card {
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     width: 100%;
-    max-width: 850px; /* Gives the layout plenty of breathing room side-by-side */
+    max-width: 95%; /* Expanded from 92% to 95% to utilize more screen width */
     display: flex;
-    flex-direction: column; /* Stacks vertically on mobile views by default */
+    flex-direction: column;
     overflow: hidden;
 }
 
@@ -318,11 +352,18 @@ textarea {
 } */
 
 /* Right Content Block */
-.founder-content-side {
+/* .founder-content-side {
     padding: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers text vertically if the image is tall */
+    justify-content: center;
+} */
+
+.founder-content-side {
+    padding: 24px 12px; /* 24px on top/bottom, only 12px on the left/right */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .content-header h2 {
